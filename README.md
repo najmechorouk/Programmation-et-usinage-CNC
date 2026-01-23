@@ -23,20 +23,20 @@ Les objectifs principaux de ce projet sont :
 ### 3. Structure du dépôt
 /image
 
- ├─ Capture.PNG        → drawing avec annotations 
+    ├─ Capture.PNG        → drawing avec annotations 
  
- ├─ part1.PNG          → La pièce conçue sur SOLIDWORKS
+    ├─ part1.PNG          → La pièce conçue sur SOLIDWORKS
  
- ├─ schema.PNG         → photos des dimensions de la pièce  
+    ├─ schema.PNG         → photos des dimensions de la pièce  
  
- └─ usinage.PNG        → usinage réel sur machine CNC
+    └─ usinage.PNG        → usinage réel sur machine CNC
  
  
 /model
 
- ├─ Part1.SLDPRT       → fichier SolidWorks (Part)
+    ├─ Part1.SLDPRT       → fichier SolidWorks (Part)
  
- └─ Part1.SLDDRW       → fichier SolidWorks (Drawing)
+    └─ Part1.SLDDRW       → fichier SolidWorks (Drawing)
  
 
 README.md
@@ -99,12 +99,15 @@ Les Z :
 La pièce a été modélisée en trois dimensions à l’aide du logiciel SolidWorks, en respectant les contraintes géométriques et fonctionnelles définies dans le cahier des charges. À partir de ce modèle 3D, un drawing technique a été élaboré, intégrant l’ensemble des cotes, tolérances et annotations nécessaires à la fabrication. Une vérification des dimensions et de la faisabilité de l’usinage a ensuite été réalisée afin de garantir la compatibilité de la pièce avec les capacités de la machine CNC et d’assurer la conformité du résultat final.
 
 ![La pièce conçue :](image/part1.PNG)
+
 [fichier SolidWorks Part](model/Part1.SLDPRT)
+
 ![Drawing avec annotations :](image/Capture.PNG)
+
 [fichier SolidWorks Drawing](model/Part1.SLDDRW)
 
 #### 6.2. Programmation CNC 
-##### les fonctions utilisées :
+
 Les machines CNC utilisent le G-code pour commander les mouvements et les opérations d’usinage, tandis que les M-codes assurent la gestion des fonctions auxiliaires de la machine. Le G-code permet de contrôler avec précision la position, la vitesse et la direction de coupe sur différentes machines automatisées. Le code S définit la vitesse de rotation de la broche et influence directement la qualité d’usinage et la durée de vie des outils.
 
 ##### G-codes (Fonctions de mouvement):
