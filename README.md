@@ -114,9 +114,7 @@ La pièce a été modélisée en trois dimensions à l’aide du logiciel SolidW
 [fichier SolidWorks Drawing](model/Part1.SLDDRW)
 
 #### 6.2. Programmation CNC 
-
 Les machines CNC utilisent le G-code pour commander les mouvements et les opérations d’usinage, tandis que les M-codes assurent la gestion des fonctions auxiliaires de la machine. Le G-code permet de contrôler avec précision la position, la vitesse et la direction de coupe sur différentes machines automatisées. Le code S définit la vitesse de rotation de la broche et influence directement la qualité d’usinage et la durée de vie des outils.
-
 ##### G-codes (Fonctions de mouvement):
 - G00 : Déplacement rapide
 - G01 : Interpolation linéaire (déplacement en ligne droite)
@@ -129,7 +127,13 @@ Les machines CNC utilisent le G-code pour commander les mouvements et les opéra
 - S (Vitesse de rotation de la broche) : S1200 définit une vitesse de 1200 RPM.
 - F (Vitesse de déplacement d'outil) : F150 définit une vitesse d'avance de 150 mm/min.
 
-#### 6.3. Code à simuler 
 [Le code à simuler](code/Code_simuler.txt)
-#### 6.4. Code à usiner 
+
 [Le code à usiner](code/Code_usiner.txt)
+
+#### 6.3. Déroulement de l’usinage CNC
+Avant de lancer l’usinage, la machine CNC est soigneusement préparée par l’installation des outils de coupe adaptés (fraises, forets, alésoirs) et la fixation rigoureuse de la pièce sur un dispositif approprié afin de garantir sa stabilité. Le programme G-code est ensuite chargé dans le contrôleur et les origines de la pièce sont définies pour assurer la précision des trajectoires. L’usinage débute par un test à vide (« dry run ») permettant de vérifier l’absence de collisions, puis les opérations d’ébauche, de finition et de perçage sont exécutées sous surveillance. À l’issue de l’usinage, la pièce est contrôlée à l’aide d’instruments de métrologie afin de vérifier sa conformité dimensionnelle, et des ajustements peuvent être effectués si nécessaire. Enfin, des opérations de finition et de nettoyage sont réalisées pour éliminer les bavures, améliorer l’état de surface et préparer la pièce à son utilisation finale.
+
+![La pièce obtenue :](image/usinage.PNG)
+
+[Accéder au repository complet](https://najmechorouk.github.io/Programmation-et-usinage-CNC)
