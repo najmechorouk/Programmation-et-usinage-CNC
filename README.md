@@ -24,9 +24,9 @@ Les objectifs principaux de ce projet sont :
  
  /code
  
-    ├─ Code simuler.txt
+    ├─ Code_simuler.txt
     
-    ├─ Code usiner.txt 
+    ├─ Code_usiner.txt 
     
  /image
 
