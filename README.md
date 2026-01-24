@@ -17,18 +17,27 @@ Ce projet vise à :
 
 - Relier les concepts théoriques de fabrication mécanique à une application concrète
 ### 3. Structure du dépôt
+ 
  /code
+ 
  ├─ Code_simuler.txt     → Programme CNC pour simulation
+ 
  ├─ Code_usiner.txt      → Programme CNC pour usinage réel
 
 /image
+
  ├─ Capture.PNG          → Drawing avec annotations
+ 
  ├─ part1.PNG            → Modèle 3D sous SolidWorks
+ 
  ├─ schema.PNG           → Schéma dimensionnel de la pièce
+ 
  └─ usinage.PNG          → Usinage réel sur machine CNC
 
 /model
+
  ├─ Part1.SLDPRT         → Fichier SolidWorks (Part)
+ 
  └─ Part1.SLDDRW         → Fichier SolidWorks (Drawing)
 
 README.md
@@ -47,6 +56,7 @@ La définition géométrique repose sur :
 
 ![La pièce à concevoir et usiner :](image/schema.PNG)
 ### 5. Définition géométrique – Points et coordonnées
+
 <ins>Le rectangle:</ins>
 - P1 (X+50 ; Y-150) {Point de départ}
 - P2 (X-50 ; Y-150)
@@ -97,14 +107,17 @@ Un drawing technique détaillé a ensuite été réalisé, intégrant cotes, tol
 #### 6.2. Programmation CNC 
 La machine CNC est pilotée à l’aide du G-code, qui commande les déplacements et les opérations d’usinage, tandis que les M-codes gèrent les fonctions auxiliaires.
 Les paramètres de vitesse de broche (S) et d’avance (F) influencent directement la qualité de l’usinage.
+
 <ins>G-codes principaux :</ins>
 - G00 : Déplacement rapide
 - G01 : Interpolation linéaire (déplacement en ligne droite)
 - G02 : Interpolation circulaire horaire (CW)
 - G03 : Interpolation circulaire antihoraire (CCW)
+  
 <ins>M-codes utilisés :</ins>
 - M02 : Fin de programme
 - M03 : Démarrage de la broche en rotation horaire
+  
 <ins>Paramètres :</ins>
 - S (Vitesse de rotation de la broche) : S1000 
 - F (Vitesse de déplacement d'outil) : F500 
