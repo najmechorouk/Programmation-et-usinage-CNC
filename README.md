@@ -21,7 +21,14 @@ Les objectifs principaux de ce projet sont :
 - Réaliser la simulation et l’usinage réel d’une pièce mécanique
 - Relier les notions théoriques de fabrication mécanique à une application pratique
 ### 3. Structure du dépôt
-/image
+ 
+ /code
+ 
+    ├─ Code simuler.txt
+    
+    ├─ Code usiner.txt 
+    
+ /image
 
     ├─ Capture.PNG        → drawing avec annotations 
  
@@ -123,4 +130,6 @@ Les machines CNC utilisent le G-code pour commander les mouvements et les opéra
 - F (Vitesse de déplacement d'outil) : F150 définit une vitesse d'avance de 150 mm/min.
 
 #### 6.3. Code à simuler 
+[Le code à simuler](code/Code_simuler.txt)
 #### 6.4. Code à usiner 
+[Le code à usiner](code/Code_usiner.txt)
